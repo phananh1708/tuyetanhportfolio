@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("timeline.css");
+*{ scroll-behavior: smooth}
+body{ background-image: url( "../images/390e1e3ed860bcc23fea7fb84cfd393b (1).jpg");
+}
+a{ color: mediumpurple}
+a:hover{ color: pink;
+text-decoration:none}
+.text-nhan
+{
+	 font-size: 72px;
+  background: -webkit-linear-gradient(pink, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-fancy
+{
+	font-family: "Mea Culpa", cursive;
+}
+.circle
+{
+	width: 1000px;
+	height: 2px; 
+	background-color:rgba(255,255,255,1.00);border: 1px solid rgba(255,255,255,1.00);
+	position: absolute;
+	z-index: -1;
+	left: 1200px; top: 600px;
+	animation-name: didi ;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	border-radius: 100%;
+	filter: blur(4px)
+}
+
+@keyframes didi
+{
+	0% {
+		top: 500px;
+	transform: rotate(45deg) scale(0)
+	}
+	50% {
+		top: 200px;
+	left: 1200px;
+	transform: rotate(200deg) scale(1)
+	}
+	100% {
+		top: 10px;
+	left: 1000px;
+	transform: rotate(45deg) scale(1.5)}
+}
+@keyframes didi2
+{
+	0% {
+		top: 500px;
+	transform: rotate(45deg) scale(0);
+		background-color: rgba(217,18,223,.8);
+	}
+	50% {
+		top: 200px;
+	left: 1500px;
+	transform: rotate(360deg) scale(1);
+		background-color: rgba(240,185,216,1.00);
+	}
+	100% {
+		top: 0px;
+	left: 1000px;
+	transform: rotate(-45deg) scale(0.5);
+		background-color: rgba(224,167,229,1.00);
+	}
+}
+
+.text-pink{
+    color: palevioletred;
+}
+
+
+
+.nav-link {
+  text-decoration: none; /* Xóa gạch chân mặc định */
+  color: black; /* Màu chữ mặc định */
+  position: relative; /* Để sử dụng pseudo-element ::after */
+  transition: color 0.2s ease; /* Hiệu ứng đổi màu chữ */
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Bắt đầu từ giữa */
+  bottom: 0;
+  width: 0; /* Mặc định không hiển thị */
+  height: 2px; /* Độ dày gạch chân */
+  background-color: pink; /* Màu gạch chân */
+  transition: all 0.2s ease; /* Hiệu ứng gạch chân */
+  transform: translateX(-50%);
+  color: deeppink;
+}
+
+.nav-link:hover {
+  color: pink; /* Đổi màu chữ sang hồng */
+}
+
+.nav-link:hover:after {
+  width: 100%; /* Gạch chân lan ra toàn bộ chữ */
+}
+
+/* Dropdown menu link (trong mục Services) */
+.dropdown-item {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: pink; /* Đổi màu chữ trong menu thả xuống */
+}
+
+.mb-2{
+    font-size: 20px;
+    color: hotpink;
+    font-style:oblique
+}
+
+
+#contact h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#contact .form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+#contact .btn-primary {
+    background-color: deeppink;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#contact .btn-primary:hover {
+    background-color: #c2185b;
+}
+
+
